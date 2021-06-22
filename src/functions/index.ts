@@ -1,4 +1,4 @@
 require('dotenv').config();
 
-export * from './onWriteBotIsAlive';
+export * from './onCreateUser';
 

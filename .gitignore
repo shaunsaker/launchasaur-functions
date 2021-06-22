@@ -2,7 +2,7 @@ node_modules/
 
 # Firebase
 firebase-debug.log
-credentials.json
+service-account.json
 
 TODOS.md
 .DS_Store

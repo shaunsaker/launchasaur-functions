@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "fat-buck-a1f13"
+    "default": "launchasaur-development",
+    "production": "launchasaur-production"
   }
 }

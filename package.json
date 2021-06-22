@@ -4,12 +4,11 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "yarn ts-node-dev --respawn",
-    "lint": "yarn lint:eslint && yarn lint:tsc",
-    "lint:eslint": "eslint . --ext .ts,.tsx",
-    "lint:tsc": "yarn build",
+    "lint": "eslint . --ext .ts,.tsx",
     "test": "jest",
     "test:watch": "jest --watch",
     "build": "tsc -p tsconfig.release.json",
+    "predeploy": "yarn lint && yarn build",
     "deploy": "yarn firebase deploy --only functions"
   },
   "main": "build/src/functions/index.js",

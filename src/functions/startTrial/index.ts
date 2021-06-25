@@ -14,6 +14,7 @@ export const startTrial = functions.https.onCall(async (_, context) => {
     const trialStartDate = moment().toISOString();
     await db.users.doc(uid).set(
       {
+        isEligibleForTrial: false,
         isTrialActive: true,
         trialStartDate,
       },

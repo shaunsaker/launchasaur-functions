@@ -5,7 +5,7 @@ export enum Plans {
   Pro = 'pro',
 }
 
-interface UserData {
+export interface UserData {
   isEligibleForTrial: boolean;
   isTrialActive: boolean;
   trialStartDate: string;

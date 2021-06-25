@@ -1,6 +1,6 @@
 import * as functions from 'firebase-functions';
 import * as moment from 'moment';
-import { db } from '../../firebase/models';
+import { db, Plans } from '../../firebase/models';
 import { isUserEligibleForTrial } from '../common/isUserEligibleForTrial';
 
 export const startTrial = functions.https.onCall(async (_, context) => {
@@ -17,6 +17,7 @@ export const startTrial = functions.https.onCall(async (_, context) => {
         isEligibleForTrial: false,
         isTrialActive: true,
         trialStartDate,
+        plan: Plans.Pro,
       },
       { merge: true }, // update does not type correctly
     );

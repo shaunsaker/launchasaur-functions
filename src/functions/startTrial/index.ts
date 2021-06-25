@@ -1,5 +1,5 @@
 import * as functions from 'firebase-functions';
-import moment from 'moment';
+import * as moment from 'moment';
 import { db } from '../../firebase/models';
 import { isUserEligibleForTrial } from '../common/isUserEligibleForTrial';
 

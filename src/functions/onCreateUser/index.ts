@@ -13,5 +13,6 @@ export const onCreateUser = functions.auth.user().onCreate(async (user) => {
     isTrialActive: false,
     trialStartDate: '',
     plan: Plans.Basic,
+    email: user.email,
   });
 });

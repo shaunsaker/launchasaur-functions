@@ -10,6 +10,7 @@ export interface UserData {
   isTrialActive: boolean;
   trialStartDate: string;
   plan: Plans;
+  email: string;
 }
 
 interface UserTrialsData {
